@@ -6,6 +6,7 @@ import javax.validation.ConstraintValidatorContext;
 
 public class ProductPriceValidator implements ConstraintValidator<ProductPrice, Integer> {
     private int price;
+
     @Override
     public void initialize(ProductPrice constraintAnnotation) {
 
