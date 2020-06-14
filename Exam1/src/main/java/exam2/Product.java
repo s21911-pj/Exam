@@ -1,5 +1,7 @@
 package exam2;
 
+import javax.validation.constraints.NotNull;
+
 public class Product {
     public int productId;
 
@@ -13,6 +15,7 @@ public class Product {
 
     public String name;
     @ProductPrice
+    @NotNull
     public int price;
 
 }

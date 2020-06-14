@@ -18,5 +18,7 @@ public class Main {
         Validator validator2 = Validation.buildDefaultValidatorFactory ().getValidator ();
         Set<ConstraintViolation<Product>> validate2 = validator.validate (product);
         System.out.println (validate2);
+
+
     }
 }

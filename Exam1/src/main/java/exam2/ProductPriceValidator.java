@@ -4,6 +4,7 @@ package exam2;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+
 public class ProductPriceValidator implements ConstraintValidator<ProductPrice, Integer> {
 
 
