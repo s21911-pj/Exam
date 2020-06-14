@@ -11,6 +11,7 @@ public class Shop {
     //@Length(min = 6, max = 6, message = "Sorry wrong name")
     //@Pattern(regexp = "[0-9]+")
     public int shopId;
+    @ShopName
     public String name;
     List<Product> productList = new ArrayList<> ();
     List<Product> soldProduct = new ArrayList<> ();

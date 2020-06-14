@@ -10,7 +10,7 @@ public class ProductPriceValidator implements ConstraintValidator<ProductPrice, 
 
     @Override
     public void initialize(ProductPrice constraintAnnotation) {
-
+        constraintAnnotation.price ();
     }
 
     @Override
