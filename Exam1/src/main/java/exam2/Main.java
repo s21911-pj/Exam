@@ -7,12 +7,16 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-
-        Product product = new Product (1, "something", 159);
-        System.out.println ("Product");
+        ProductPriceValidator productPriceValidator = new ProductPriceValidator ();
+        Product product = new Product (1, "something", -20);
+        System.out.println (productPriceValidator);
         Validator validator = Validation.buildDefaultValidatorFactory ().getValidator ();
-        Set<ConstraintViolation<Product>> validate = validator.validate (product);
+        Set<ConstraintViolation<ProductPriceValidator>> validate = validator.validate (productPriceValidator);
         System.out.println (validate);
 
+
+        Validator validator2 = Validation.buildDefaultValidatorFactory ().getValidator ();
+        Set<ConstraintViolation<Product>> validate2 = validator.validate (product);
+        System.out.println (validate2);
     }
 }
