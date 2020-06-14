@@ -20,5 +20,11 @@ public class Main {
         System.out.println (validate2);
 
 
+        Shop shop = new Shop ("sprawdze czy dzialasz dziadzie");
+        Validator validator3 = Validation.buildDefaultValidatorFactory ().getValidator ();
+        Set<ConstraintViolation<Shop>> validate3 = validator.validate (shop);
+        System.out.println (validate3);
+
+
     }
 }

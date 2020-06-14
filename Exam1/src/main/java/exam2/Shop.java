@@ -16,6 +16,10 @@ public class Shop {
     List<Product> productList = new ArrayList<> ();
     List<Product> soldProduct = new ArrayList<> ();
 
+    public Shop(String name) {
+        this.name = name;
+    }
+
     public void addNewProduct(Product product) {
         productList.add (product);
     }
